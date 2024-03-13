@@ -39,12 +39,6 @@ do biblioteki uchardet.
 %prep
 %setup -q -n faust-cchardet-%{version}
 
-# these fail:
-# - recognized as Windows-1252
-#%{__rm} src/tests/testdata/{fi,ga}/iso-8859-1.txt
-# - recognized as iso-8859-11
-#%{__rm} src/tests/testdata/th/tis-620.txt
-
 %build
 %py3_build
 
